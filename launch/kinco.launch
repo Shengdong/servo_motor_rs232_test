@@ -1,0 +1,10 @@
+<launch>
+
+ <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot" clear_params="true" output="screen" args="/vel/point/x">
+  </node>
+
+    <node name="kinco_motor_rs232_node" pkg="kinco_motor_rs232" type="kinco_motor_rs232_node" clear_params="true" output="screen">
+    </node>
+
+</launch>
+
